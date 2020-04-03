@@ -4,6 +4,7 @@ My personal list of tips and solutions to issues I have encountered during my ad
 ## Unreal Engine general tips
 - everything in a scene in Unreal Engine is an Actor, containing or not a visual representation
 - get random value with FMath::FRandRange()
+- make arrays with TArray and use it's Num() method to get array's length
 
 ## VS Community shortcuts:
 - switch lines: ALT + arrow

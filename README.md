@@ -1,6 +1,6 @@
 # Unreal Engine 4.xx and VS Community Development Guides
 
-VS Community shortcuts:
+## VS Community shortcuts:
 - switch lines: ALT + arrow
 - duplicate line: CTRL + D
 - remove line: CTRL + SHIFT + L

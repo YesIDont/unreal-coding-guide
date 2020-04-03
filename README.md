@@ -5,6 +5,7 @@ My personal list of tips and solutions to issues I have encountered during my ad
 - switch lines: ALT + arrow
 - duplicate line: CTRL + D
 - remove line: CTRL + SHIFT + L
+- switch on/off comments: go to Tools > Options > Environmet > Keyboard and search for "Edit.ToggleBlockComment" or "Edit.ToggleLineComment" and change it to whatever you like (personaly I have doing it with default shortcuts since it requires to do two shortucts one by one)
 
 ## Common issues and solutions
 

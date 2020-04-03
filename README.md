@@ -1,6 +1,9 @@
 # Unreal Engine 4.xx and VS Community Development Guides
 My personal list of tips and solutions to issues I have encountered during my adventure with UE4 and VS Community.
 
+## Unreal Engine general tips
+- everything in a scene in Unreal Engine is an Actor, containing or not a visual representation
+
 ## VS Community shortcuts:
 - switch lines: ALT + arrow
 - duplicate line: CTRL + D

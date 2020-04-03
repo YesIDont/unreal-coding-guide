@@ -3,7 +3,7 @@ My personal list of tips and solutions to issues I have encountered during my ad
 
 ## Unreal Engine general tips
 - everything in a scene in Unreal Engine is an Actor, containing or not a visual representation
-- get random value with FRandRange()
+- get random value with FMath::FRandRange()
 
 ## VS Community shortcuts:
 - switch lines: ALT + arrow

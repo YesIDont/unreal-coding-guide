@@ -5,6 +5,7 @@ My personal list of tips and solutions to issues I have encountered during my ad
 - everything in a scene in Unreal Engine is an Actor, containing or not a visual representation
 - get random value with FMath::FRandRange()
 - make arrays with TArray and use it's Num() method to get array's length
+- it's possible to change the class that blueprint was created from after its already created. Open selected blueprint and go to top left main menu of the editor window: File > Repair Blueprint > Select new class.
 
 ## Unreal Engine > Paper2D
 ### fill PaperFlipbookComponent with flipbook by its path:

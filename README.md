@@ -45,4 +45,4 @@ Solution: It can come up with few different scenerios but usually it means your 
   ```c++
   GetMesh()->SetRelativeLocation(FVector(0, 0.0f, -92.5f));
   ```
-  Above code invokes GetMesh method that should return pointer to USkeletalMeshComponent and fail with that error if USkeletalMeshComponent won't be imported on top of the file.
+  Above code invokes GetMesh method that should return pointer to USkeletalMeshComponent. It will throw error if USkeletalMeshComponent won't be imported on top of the file.

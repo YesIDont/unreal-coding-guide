@@ -10,7 +10,6 @@ My personal list of tips and solutions to issues I have encountered during my ad
 ## Debug logging quick templates
 - GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Message"));
 - UE_LOG(LogTemp, Warning, TEXT("Message"));
-- UE_LOG(LogTemp, Warning, TEXT("Delta: %s"), GetWorld()->GetDeltaSeconds());
 
 ## Unreal Engine > Paper2D
 ### fill PaperFlipbookComponent with flipbook by its path:

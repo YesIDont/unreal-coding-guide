@@ -7,9 +7,10 @@ My personal list of tips and solutions to issues I have encountered during my ad
 - make arrays with TArray and use it's Num() method to get array's length
 - it's possible to change the class that blueprint was created from after its already created. Open selected blueprint and go to top left main menu of the editor window: File > Repair Blueprint > Select new class.
 
-## Log quick templates
+## Debug logging quick templates
 - GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Message"));
 - UE_LOG(LogTemp, Warning, TEXT("Message"));
+- UE_LOG(LogTemp, Warning, TEXT("Delta: %s"), GetWorld()->GetDeltaSeconds());
 
 ## Unreal Engine > Paper2D
 ### fill PaperFlipbookComponent with flipbook by its path:

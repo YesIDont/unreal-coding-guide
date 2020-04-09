@@ -9,9 +9,18 @@ My personal list of tips and solutions to issues I have encountered during my ad
 - get current frame delta seconds within character: GetWorld()->GetDeltaSeconds()
 
 ## Debug logging quick templates
-- GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Message"));
-- UE_LOG(LogTemp, Warning, TEXT("Message"));
-- UE_LOG(LogTemp, Warning, TEXT("Text, %d %f %s"), intVar, floatVar, *fstringVar );
+```c++
+GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Message"));
+```
+```c++
+GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, FString::Printf(TEXT("Mouse x: %f, Mouse y: %f"), floatVariable1, floatVariable2));
+```
+```c++
+UE_LOG(LogTemp, Warning, TEXT("Message"));
+```
+```c++
+UE_LOG(LogTemp, Warning, TEXT("Text, %d %f %s"), intVar, floatVar, *fstringVar );
+```
 
 ## Unreal Engine > Paper2D
 ### fill PaperFlipbookComponent with flipbook by its path:

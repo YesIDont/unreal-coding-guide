@@ -13,7 +13,15 @@ My personal list of tips and solutions to issues I have encountered during my ad
 GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Message"));
 ```
 ```c++
-GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, FString::Printf(TEXT("Mouse x: %f, Mouse y: %f"), floatVariable1, floatVariable2));
+GEngine->
+	AddOnScreenDebugMessage(
+		-1, 5.0f,
+		FColor::Yellow,
+		FString::Printf(
+			TEXT("Message, d%, f%, s%"),
+			VariableNameInteger, VariableNameFloat, VariableString
+		)
+	);
 ```
 ```c++
 UE_LOG(LogTemp, Warning, TEXT("Message"));

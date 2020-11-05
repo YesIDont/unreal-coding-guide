@@ -10,6 +10,10 @@ My personal list of tips and solutions to issues I have encountered during my ad
 
 ## Debug logging quick templates
 ```c++
+	// Custom Log lib
+	Log::InGame(FString::Printf(TEXT("Text: %f"), SomeFloat));
+```
+```c++
 GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Message"));
 ```
 ```c++

@@ -1,6 +1,11 @@
 # Unreal Engine 4.xx with C++ and VS Community Development Guides
 My personal list of tips and solutions to issues I have encountered during my adventure with UE4 and VS Community.
 
+## Debug tips
+Use console in the editor/game (tylde key)
+- stat fps
+- stat unit
+
 ## General tips
 - Everything in a scene in Unreal Engine is an Actor, containing or not a visual representation.
 - Get random value with FMath::FRandRange().

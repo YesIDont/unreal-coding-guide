@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Unreal project name</title>
+  </head>
+  <body>
+    <div><input type="checkbox" /> Create backup of the entire project.</div>
+    <div>
+      <input type="checkbox" /> Duplicate the OldName project folder. Rename the
+      duplicate folder to NewName.
+    </div>
+    <div><input type="checkbox" /> Open the NewName folder.</div>
+    <div>
+      <input type="checkbox" /> Rename OldName.uproject to NewName.uproject.
+    </div>
+    <div>
+      <input type="checkbox" /> Open NewName.uproject in a text editor, and
+      replace all instances of OldName with NewName. Save and close the file.
+    </div>
+    <div>
+      <input type="checkbox" /> If you have an OldName.png thumbnail, rename it
+      to NewName.png.
+    </div>
+    <div><input type="checkbox" /> Open the Source folder.</div>
+    <div>
+      <input type="checkbox" /> Rename OldName.Target.cs to NewName.Target.cs.
+    </div>
+    <div>
+      <input type="checkbox" /> Open NewName.Target.cs. Find all instances of
+      OldName in this file with NewName. There may be some partial word matches.
+      Save and close the file.
+    </div>
+    <div>
+      <input type="checkbox" /> Repeat step 7 and 8 for OldNameEditor.Target.cs
+      (renaming it to NewNameEditor.Target.cs.
+    </div>
+    <div>
+      <input type="checkbox" /> Rename this OldName folder to NewName as well.
+    </div>
+    <div><input type="checkbox" /> Open the NewName folder.</div>
+    <div>
+      <input type="checkbox" /> Rename OldName.Build.cs to NewName.Build.cs.
+    </div>
+    <div>
+      <input type="checkbox" /> Open NewName.Build.cs. Find all instances of
+      OldName in this file with NewName. Save and close the file.
+    </div>
+    <div>
+      <input type="checkbox" /> Go back to the main project folder, and
+      right-click on the NewName.uproject file. Select Generate Visual Studio
+      Project files. (If you don’t have this option, run
+      Engine/Binaries/Win64/UnrealVersionSelector-Win64-Shipping.exe once).
+    </div>
+    <div><input type="checkbox" /> Open NewName.sln.</div>
+    <div><input type="checkbox" /> Open OldName.cpp</div>
+    <div>
+      <input type="checkbox" /> Change IMPLEMENT_PRIMARY_GAME_MODULE(
+      FDefaultGameModuleImpl, OldName, "OldName" ); to
+      IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, NewName, "NewName"
+      );
+    </div>
+    <div>
+      <input type="checkbox" /> Open the Config folder, and check all the
+      configuration files for OldName references to change to NewName. For
+      example, change GlobalDefaultGameMode=/Script/OldName.OldNameGameMode to
+      GlobalDefaultGameMode=/Script/NewName.OldNameGameMode.
+    </div>
+    <div>
+      <input type="checkbox" /> Add the following to DefaultEngine.ini (under an
+      existing or new [/Script/Engine.Engine] header):
+      +ActiveGameNameRedirects=(OldGameName="/Script/OldName",
+      NewGameName="/Script/NewName")
+    </div>
+    <div>
+      <input type="checkbox" /> If you have any OLDNAME_API in your project’s
+      header files, change those instances to NEWNAME_API.
+    </div>
+    <div>
+      <input type="checkbox" /> Delete Saved and Intermediate folders in your
+      project directory.
+    </div>
+    <div>
+      <input type="checkbox" /> Compile, and your project should now open
+      without errors.
+    </div>
+  </body>
+</html>

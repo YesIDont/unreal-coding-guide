@@ -1,4 +1,4 @@
-# Unreal Engine 4.xx with C++ and VS Community Development Guides
+# Unreal Engine Coding Guide
 My personal list of tips and solutions to issues I have encountered during my adventure with UE4 and VS Community.
 
 ## Debug tips

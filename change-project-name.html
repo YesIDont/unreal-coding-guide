@@ -66,12 +66,12 @@
     </style>
   </head>
   <body>
-    <div>
+    <div class="item">
       <span class="step">0</span>
       <input type="checkbox" />
       <div>Create backup of the entire project.</div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">1</span>
       <input type="checkbox" />
       <div>
@@ -79,12 +79,12 @@
         Rename the duplicate folder to <span class="new-name">NewName</span>.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">2</span>
       <input type="checkbox" />
       <div>Open the <span class="new-name">NewName</span> folder.</div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">3</span>
       <input type="checkbox" />
       <div>
@@ -92,7 +92,7 @@
         <span class="new-name">NewName</span>.uproject.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">4</span>
       <input type="checkbox" />
       <div>
@@ -101,7 +101,7 @@
         <span class="new-name">NewName</span>. Save and close the file.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">5</span>
       <input type="checkbox" />
       <div>
@@ -109,12 +109,12 @@
         rename it to <span class="new-name">NewName</span>.png.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">6</span>
       <input type="checkbox" />
       <div>Open the Source folder.</div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">7</span>
       <input type="checkbox" />
       <div>
@@ -122,7 +122,7 @@
         <span class="new-name">NewName</span>.Target.cs.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">8</span>
       <input type="checkbox" />
       <div>
@@ -132,7 +132,7 @@
         matches. Save and close the file.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">9</span>
       <input type="checkbox" />
       <div>
@@ -141,7 +141,7 @@
         <span class="new-name">NewName</span>Editor.Target.cs.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">10</span>
       <input type="checkbox" />
       <div>
@@ -149,12 +149,12 @@
         <span class="new-name">NewName</span> as well.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">11</span>
       <input type="checkbox" />
       <div>Open the <span class="new-name">NewName</span> folder.</div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">12</span>
       <input type="checkbox" />
       <div>
@@ -162,7 +162,7 @@
         <span class="new-name">NewName</span>.Build.cs.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">13</span>
       <input type="checkbox" />
       <div>
@@ -171,7 +171,7 @@
         <span class="new-name">NewName</span>. Save and close the file.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">14</span>
       <input type="checkbox" />
       <div>
@@ -181,17 +181,17 @@
         Engine/Binaries/Win64/UnrealVersionSelector-Win64-Shipping.exe once).
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">15</span>
       <input type="checkbox" />
       <div>Open <span class="new-name">NewName</span>.sln.</div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">16</span>
       <input type="checkbox" />
       <div>Open <span class="old-name">OldName</span>.cpp</div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">17</span>
       <input type="checkbox" />
       <div>
@@ -211,7 +211,7 @@
         >
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">18</span>
       <input type="checkbox" />
       <div>
@@ -230,7 +230,7 @@
         >.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">19</span>
       <input type="checkbox" />
       <div>
@@ -243,7 +243,7 @@
         </span>
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">20</span>
       <input type="checkbox" />
       <div>
@@ -252,14 +252,14 @@
         <span class="new-name">NewName</span>_API.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">21</span>
       <input type="checkbox" />
       <div>
         Delete Saved and Intermediate folders in your project directory.
       </div>
     </div>
-    <div>
+    <div class="item">
       <span class="step">22</span>
       <input type="checkbox" />
       <div>Compile, and your project should now open without errors.</div>
@@ -274,7 +274,7 @@
       div.style.textDecoration = input.checked ? 'line-through' : 'none';
     };
 
-    Array.from(document.querySelectorAll('div')).forEach((div) => {
+    Array.from(document.querySelectorAll('.item')).forEach((div) => {
       onDivClick(div, true);
       div.onclick = ({ target }) => {
         onDivClick(div, target instanceof HTMLInputElement);

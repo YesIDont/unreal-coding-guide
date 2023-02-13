@@ -19,10 +19,18 @@ Remember, with FName you are sending half the bytes across the network but you c
 Reconstruct an FName to FString like this:
 
 ```cpp
-  YourFName.ToString()
+YourFName.ToString()
  ```
 convert FString to FName like this
+
 ```cpp
 FString Str = "Yay";
 FName NewName = FName(*Str);
+ ```
+
+Create FText from FName and FString using static methods:
+
+```cpp
+FText::FromName();
+FText::FromString();
  ```

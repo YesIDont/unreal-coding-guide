@@ -1,4 +1,4 @@
-# Unreal Engine Coding Guide
+# Unreal Engine and VS Code Coding Guide
 My personal list of tips and solutions to issues I have encountered during my adventure with UE4 and VS Community.
 
 ## Debug tips

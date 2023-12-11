@@ -35,6 +35,16 @@ FText::FromName();
 FText::FromString();
  ```
 
+## Tips
+Static strings that don't need to be manipulated can be defined like so (for performance gains)
+```cpp
+// Using FString
+inline static FString GetVerb = TEXT("GET");
+
+// Using constexpr TCHAR*
+inline static constexpr TCHAR* GetVerb = TEXT("GET");
+```
+
 ## Q&A
 
 ### Q: Is it save to omit FString constructor in favor of schorter TEXT("string") syntax? As if:

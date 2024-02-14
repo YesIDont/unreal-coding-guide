@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "Misc/Paths.h"
+#include "Windows/WindowsPlatformProcess.h"
+
 #include "GameModeCommands.generated.h"
 
 /**
